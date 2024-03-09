@@ -1,8 +1,6 @@
 package com.example.termtracker;
 
-import androidx.lifecycle.LiveData;
 import androidx.room.*;
-import com.example.termtracker.Course;
 
 import java.util.List;
 

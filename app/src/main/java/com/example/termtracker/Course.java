@@ -1,13 +1,9 @@
 package com.example.termtracker;
 
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-import org.jetbrains.annotations.NotNull;
-
-import java.time.LocalDate;
 
 @Entity(tableName = "courses",
         foreignKeys = @ForeignKey(entity = Term.class, parentColumns = "id", childColumns = "termID"))

@@ -11,8 +11,6 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.*;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -23,7 +21,6 @@ import java.util.List;
 
 public class TermActivity extends AppCompatActivity implements AddTermDialog.OnTermEntered, TermRecyclerViewInterface, EditTermDialog.OnTermEdited{
 
-//    public static final int NEW_TERM_ACTIVITY_REQUEST_CODE = 1;
     private static RecyclerView recyclerView;
     private AddTermRecyclerAdapter adapter;
     private final List<Term> allTerms = new ArrayList<>();
@@ -31,7 +28,6 @@ public class TermActivity extends AppCompatActivity implements AddTermDialog.OnT
     public static int mPosition;
     public static int termId;
     public static int selectedTermID;
-//    public static int testID;
     private final List<String> termInfo = new ArrayList<>();
 
     @Override

@@ -4,7 +4,6 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-import java.time.LocalDate;
 
 @Entity(tableName = "assessments",
         foreignKeys = @ForeignKey(entity = Course.class, parentColumns = "id", childColumns = "courseID"))

@@ -1,12 +1,9 @@
 package com.example.termtracker;
 
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-import java.time.LocalDate;
 
 @Entity(tableName = "terms")
 public class Term {
