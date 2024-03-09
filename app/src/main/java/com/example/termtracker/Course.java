@@ -15,12 +15,12 @@ public class Course {
     private String courseTitle;
     private String start;
     private String end;
-    private String status;
+    private final String status;
     private String instructorName;
     private String instructorPhone;
     private String instructorEmail;
     private String note;
-    private int termID;
+    private final int termID;
     private String termName;
 
     public Course(String courseTitle, String start, String end, String status, String instructorName, String instructorPhone, String instructorEmail, int termID) {

@@ -11,7 +11,7 @@ public class Assessment {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String assessmentTitle;
+    private final String assessmentTitle;
     private String type;
     private String date;
     private int courseID;
