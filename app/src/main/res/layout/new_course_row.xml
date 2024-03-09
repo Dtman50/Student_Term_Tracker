@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            android:layout_margin="10dp"
+    >
+        <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <TextView
+                    android:text="@string/courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/courseName" android:textStyle="italic"
+                    android:textSize="12sp"/>
+            <TextView
+                    android:text="@string/startTV"
+                    android:layout_width="wrap_content"
+                    android:layout_alignBaseline="@id/separator" android:layout_alignStart="@id/separator"
+                    android:layout_height="wrap_content" android:id="@+id/courseStart"
+                    android:layout_marginStart="-64dp" android:textSize="12sp"/>
+            <TextView
+                    android:text="@string/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/separator"
+                    android:layout_alignBaseline="@id/courseEnd" android:layout_alignStart="@id/courseEnd"
+                    android:layout_marginStart="-32dp" android:textSize="12sp"/>
+            <TextView
+                    android:text="@string/endTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/courseEnd"
+                    android:layout_alignParentEnd="true" android:textSize="12sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

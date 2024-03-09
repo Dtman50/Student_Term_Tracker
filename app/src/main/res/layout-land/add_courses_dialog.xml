@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/courseLabelTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/courseLabel"
+                android:textStyle="bold" android:textSize="24sp" android:gravity="center_horizontal"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_below="@id/courseLabelTV"
+                android:hint="@string/addCourseTitle"
+                android:ems="10"
+                android:id="@+id/addCourseTitle" android:autofillHints="Course Title"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addCourseTitle"
+                android:inputType="date"
+                android:hint="@string/addCourseStart"
+                android:ems="10"
+                android:id="@+id/addCourseStart" android:autofillHints="Course Start Date"/>
+        <EditText
+                android:autofillHints="Course End Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addCourseStart"
+                android:inputType="date"
+                android:hint="@string/addCourseEnd"
+                android:ems="10"
+                android:id="@+id/addCourseEnd"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_my_calendar"
+                android:id="@+id/courseStartDatePickBtn" android:layout_marginStart="3dp"
+                android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="-209dp"
+                android:layout_toEndOf="@id/addCourseStart"
+                android:layout_marginBottom="1dp" android:layout_alignBottom="@+id/addCourseStart"
+                android:contentDescription="@string/start_date_picker"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_my_calendar"
+                android:id="@+id/courseEndDatePickBtn" android:layout_marginStart="3dp"
+                android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="-209dp"
+                android:layout_toEndOf="@id/addCourseEnd"
+                android:layout_marginBottom="-47dp" android:layout_alignBottom="@+id/addCourseStart"
+                android:contentDescription="@string/end_date_picker"/>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/statusDropDown"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/addCourseEnd"
+                android:hint="@string/select"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                >
+
+                <AutoCompleteTextView
+                        android:id="@+id/auto_complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+                android:id="@+id/instructorLabelTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/statusDropDown"
+                android:text="@string/instructorLabel"
+                android:textStyle="bold" android:textSize="24sp" android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_below="@id/instructorLabelTV"
+                android:hint="@string/instructorName"
+                android:ems="10"
+                android:id="@+id/instructorName" android:autofillHints="Instructor Name"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instructorName"
+                android:inputType="phone"
+                android:hint="@string/instructorPhone"
+                android:ems="10"
+                android:id="@+id/instructorPhone" android:autofillHints="Instructor Phone Number"/>
+        <EditText
+                android:autofillHints="Instructor Email Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instructorPhone"
+                android:inputType="textEmailAddress"
+                android:hint="@string/instructorEmail"
+                android:ems="10"
+                android:id="@+id/instructorEmail"/>
+
+    </RelativeLayout>
+</ScrollView>

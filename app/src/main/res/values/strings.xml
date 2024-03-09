@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Term Tracker</string>
+    <!--    Home Page-->
+    <string name="welcome">Welcome\n To\n Term Tracker</string>
+    <string name="start">Let\'s Start</string>
+    <!--    MAIN Terms Page-->
+    <string name="termTV">Term</string>
+    <string name="startTV">Start Date</string>
+    <string name="separator">\t—\t</string>
+    <string name="endTV">End Date</string>
+    <string name="termsTV">Terms</string>
+    <string name="editTV">Edit</string>
+    <string name="addTermBtn">Add Term</string>
+    <string name="addTermTitle">Enter Term Title…</string>
+    <string name="addTermStart">Enter Term Start Date…</string>
+    <string name="addTermEnd">Enter Term End Date…</string>
+    <string name="start_date_picker">Start Date Picker</string>
+    <string name="end_date_picker">End Date Picker</string>
+    <string name="edit_term_button">edit term button</string>
+    <!--    DETAILED Terms Page-->
+    <string name="detailed_termTitle">Title</string>
+    <string name="detailed_termStart">Start Date :</string>
+    <string name="detailed_termEnd">End Date :</string>
+    <string name="detailed_courses">Courses</string>
+    <string name="detailed_saveBtn">Save</string>
+    <string name="add_course">Add Course</string>
+    <!--    Courses Page-->
+    <string name="courseName">Course Name</string>
+    <string name="courseLabel">Course</string>
+    <string name="instructorLabel">Course Instructor</string>
+    <string name="select">Course Status</string>
+    <string name="addCourseTitle">Enter Course Title…</string>
+    <string name="addCourseStart">Enter Course Start Date…</string>
+    <string name="addCourseEnd">Enter Course End Date…</string>
+    <string name="instructorName">Enter Instructor Name…</string>
+    <string name="instructorPhone">Enter Instructor Phone Number…</string>
+    <string name="instructorEmail">Enter Instructor Email Address…</string>
+    <string-array name="CourseStatus">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan to Take</item>
+    </string-array>
+    <!--  DETAILED Course Page-->
+    <string name="detailed_courseTitle">Title</string>
+    <string name="detailed_courseStart">Start Date :</string>
+    <string name="detailed_courseEnd">End Date :</string>
+    <string name="detailed_courseStatus">Status :</string>
+    <string name="detailed_instructorName">Instructor Name :</string>
+    <string name="detailed_instructorPhone">Instructor Phone :</string>
+    <string name="detailed_instructorEmail">Instructor Email :</string>
+    <string name="detailed_courseAssessments">Assessments</string>
+    <string name="detailed_courseNotes">Note</string>
+    <string name="detailed_courseSaveBtn">Save</string>
+    <string name="add_assessment">Add Assessment</string>
+    <string name="add_note">Add Note</string>
+    <string name="newNote">Enter Note Here…</string>
+    <string name="editNote">Edit Note</string>
+    <string name="saveNote">Save Note</string>
+    <string name="shareNote">Share Note</string>
+    <string name="deleteNote">Delete Note</string>
+    <string name="courses_scrollview">Courses ScrollView</string>
+    <string name="courseStart_notification">Notify Start Date</string>
+    <string name="courseEnd_notification">Notify End Date</string>
+    <!--  Assessment Page-->
+    <string name="assessmentName">Assessment Name</string>
+    <string name="assessmentType">T</string>
+    <string name="date">Date</string>
+    <string name="addAssessmentTitle">Enter Assessment Title…</string>
+    <string name="addAssessmentDate">Enter Assessment Date…</string>
+    <string name="addAssessmentType">Assessment Type :</string>
+    <string name="addAssessmentTypePerformance">Performance</string>
+    <string name="addAssessmentTypeObjective">Objective</string>
+    <string name="detailed_assessmentSaveBtn">Save</string>
+
+    <!--  DETAILED Assessment Page-->
+    <string name="detailed_assessmentTitle">Title</string>
+    <string name="detailed_assessmentStartDate">Assessment Start Date :</string>
+    <string name="detailed_assessmentEndDate">Assessment End Date :</string>
+    <string name="detailed_assessmentType">Assessment Type :</string>
+    <string name="assessmentStart_notification">Notify Assessment Start</string>
+    <string name="assessmentEnd_notification">Notify Assessment End</string>
+    <!--  NOTIFICATIONS  -->
+    <string name="channel_name">course_reminder_channel</string>
+    <string name="channel_description">Description</string>
+</resources>

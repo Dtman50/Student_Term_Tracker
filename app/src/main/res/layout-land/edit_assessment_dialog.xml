@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/addAssessmentTitle"
+            android:ems="10"
+            android:id="@+id/editAssessmentTitle" android:autofillHints="Assessment Title"/>
+    <EditText
+            android:hint="@string/addAssessmentDate"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editAssessmentDate" android:layout_alignParentBottom="false"
+            android:layout_below="@id/editAssessmentTitle" android:layout_marginTop="0dp"
+            android:autofillHints="Assessment Start Date"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/editAssessmentDatePickBtn" android:layout_marginStart="0dp"
+            android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="-209dp"
+            android:layout_toEndOf="@id/editAssessmentDate"
+            android:layout_marginBottom="2dp" android:layout_alignBottom="@+id/editAssessmentDate"
+            android:contentDescription="@string/start_date_picker"/>
+    <TextView
+            android:hint="@string/addAssessmentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:ems="10"
+            android:id="@+id/editAssessmentType" android:layout_below="@id/editAssessmentDate"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Assessment Type"/>
+    <RadioGroup
+            android:id="@+id/editAssessmentTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/editAssessmentType">
+        <RadioButton
+                android:id="@+id/performanceRadio"
+                android:text="@string/addAssessmentTypePerformance"
+                android:textSize="20sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton
+                android:id="@+id/objectiveRadio"
+                android:text="@string/addAssessmentTypeObjective"
+                android:textSize="20sp"
+                android:layout_marginStart="7dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".EditTermDialog" android:padding="16dp"
+                >
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/addTermTitle"
+            android:ems="10"
+            android:id="@+id/editTermTitle" android:autofillHints="Term Title"/>
+    <EditText
+            android:hint="@string/addTermStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTermStart" android:layout_alignParentBottom="false"
+            android:layout_below="@id/editTermTitle" android:layout_marginTop="0dp"
+            android:autofillHints="Term Start Date"/>
+    <EditText
+            android:hint="@string/addTermEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTermEnd" android:layout_below="@id/editTermStart" android:layout_marginTop="0dp"
+            android:autofillHints="Term End Date"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/startDatePickBtn" android:layout_marginStart="3dp"
+            android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="-209dp"
+            android:layout_toEndOf="@id/editTermStart"
+            android:layout_marginBottom="1dp" android:layout_alignBottom="@+id/editTermStart"
+            android:contentDescription="@string/start_date_picker"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/endDatePickBtn" android:layout_marginStart="3dp"
+            android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="-209dp"
+            android:layout_toEndOf="@id/editTermEnd"
+            android:layout_marginBottom="-47dp" android:layout_alignBottom="@+id/editTermStart"
+            android:contentDescription="@string/end_date_picker"/>
+
+</RelativeLayout>
