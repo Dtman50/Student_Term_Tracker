@@ -38,6 +38,7 @@ public class EditCourseDialog extends AppCompatDialogFragment {
         void onCourseEdited(Course course);
     }
 
+    @SuppressLint("CutPasteId")
     @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -53,9 +54,7 @@ public class EditCourseDialog extends AppCompatDialogFragment {
         statusAdapter = ArrayAdapter.createFromResource(getContext(), R.array.CourseStatus, R.layout.list_item);
         statusAdapter.setDropDownViewResource(R.layout.list_item);
         autoCompleteTextView.setAdapter(statusAdapter);
-        autoCompleteTextView.setOnItemClickListener((parent, view12, position, id) -> {
-            status = parent.getItemAtPosition(position).toString();
-        });
+        autoCompleteTextView.setOnItemClickListener((parent, view12, position, id) -> status = parent.getItemAtPosition(position).toString());
 
         courseTitle = view.findViewById(R.id.editCourseTitle);
         courseStart = view.findViewById(R.id.editCourseStart);

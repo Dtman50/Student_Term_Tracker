@@ -146,9 +146,7 @@ public class DetailedCourseActivity extends AppCompatActivity implements Assessm
             Toast.makeText(this, "Notification Created!", Toast.LENGTH_SHORT).show();
         });
 
-        addAssessmentBtn.setOnClickListener((v -> {
-            openAddAssessmentDialog();
-        }));
+        addAssessmentBtn.setOnClickListener((v -> openAddAssessmentDialog()));
 
         shareBtn.setOnClickListener((v -> {
             if (courseNote.size() == 0) {

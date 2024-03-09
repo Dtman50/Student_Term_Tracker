@@ -30,7 +30,7 @@ public class EditAssessmentDialog extends AppCompatDialogFragment {
         void onAssessmentEdited(Assessment assessment);
     }
 
-
+    @SuppressLint("CutPasteId")
     @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

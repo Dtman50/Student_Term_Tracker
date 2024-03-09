@@ -3,6 +3,7 @@ package com.example.termtracker;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import org.jetbrains.annotations.NotNull;
 
 
 @Entity(tableName = "terms")
@@ -32,10 +33,6 @@ public class Term {
 
     public String getTermTitle() {
         return termTitle;
-    }
-
-    public void setTermTitle(String termTitle) {
-        this.termTitle = termTitle;
     }
 
     public String getStart() {
@@ -70,6 +67,7 @@ public class Term {
         this.courseName = courseName;
     }
 
+    @NotNull
     @Override
     public String toString() {
         return termTitle + " " + start + " " + end ;

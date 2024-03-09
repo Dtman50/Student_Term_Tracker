@@ -33,6 +33,6 @@
             android:layout_marginStart="131dp" android:layout_marginEnd="132dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.992"
-    />
+            android:contentDescription="@string/app_icon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

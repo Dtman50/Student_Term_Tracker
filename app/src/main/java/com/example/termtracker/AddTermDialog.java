@@ -31,7 +31,7 @@ public class AddTermDialog extends AppCompatDialogFragment {
 
     private Term term;
 
-
+    @SuppressLint("CutPasteId")
     @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

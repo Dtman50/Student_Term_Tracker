@@ -59,9 +59,7 @@ public class DetailedTermActivity extends AppCompatActivity implements CourseRec
             Toast.makeText(this, "Saved!", Toast.LENGTH_SHORT).show();
         }));
 
-        addCourseBtn.setOnClickListener((v -> {
-            openAddCourseDialog();
-        }));
+        addCourseBtn.setOnClickListener((v -> openAddCourseDialog()));
 
         termTrackerDatabase = TermTrackerDatabase.getInstance(getApplicationContext());
         allCourses.addAll(termTrackerDatabase.courseDao().getCourses(TermActivity.selectedTermID));

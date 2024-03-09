@@ -83,4 +83,5 @@
     <!--  NOTIFICATIONS  -->
     <string name="channel_name">course_reminder_channel</string>
     <string name="channel_description">Description</string>
+    <string name="app_icon">App Icon</string>
 </resources>

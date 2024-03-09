@@ -4,6 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import org.jetbrains.annotations.NotNull;
 
 @Entity(tableName = "courses",
         foreignKeys = @ForeignKey(entity = Term.class, parentColumns = "id", childColumns = "termID"))
@@ -45,10 +46,6 @@ public class Course {
         return courseTitle;
     }
 
-    public void setCourseTitle(String courseTitle) {
-        this.courseTitle = courseTitle;
-    }
-
     public String getStart() {
         return start;
     }
@@ -67,10 +64,6 @@ public class Course {
 
     public String getStatus() {
         return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getInstructorName() {
@@ -109,10 +102,6 @@ public class Course {
         return termID;
     }
 
-    public void setTermID(int termID) {
-        this.termID = termID;
-    }
-
     public String getTermName() {
         return termName;
     }
@@ -121,6 +110,7 @@ public class Course {
         this.termName = termName;
     }
 
+    @NotNull
     @Override
     public String toString() {
         return courseTitle + " " + start + " " + end + " " + status + " " + instructorName +

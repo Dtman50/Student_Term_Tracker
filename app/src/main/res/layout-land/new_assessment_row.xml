@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
               android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
 >
@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content" android:id="@+id/assessmentType"
                     android:layout_alignParentEnd="true"
                     android:textSize="12sp" android:textColor="#F60303" android:textStyle="bold|italic"
-                    android:layout_marginEnd="11dp"/>
+                    android:layout_marginEnd="11dp" tools:ignore="RelativeOverlap"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

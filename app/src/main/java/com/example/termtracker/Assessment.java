@@ -44,10 +44,6 @@ public class Assessment {
         return assessmentTitle;
     }
 
-    public void setAssessmentTitle(String assessmentTitle) {
-        this.assessmentTitle = assessmentTitle;
-    }
-
     public String getDate() {
         return date;
     }

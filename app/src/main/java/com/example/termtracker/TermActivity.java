@@ -164,9 +164,6 @@ public class TermActivity extends AppCompatActivity implements AddTermDialog.OnT
         public Term getTermAt(int position) {
             return mTerms.get(position);
         }
-        public int getPosition() {
-            return position1;
-        }
 
         public void setPosition(int position) {
             this.position1 = position;
@@ -189,6 +186,10 @@ public class TermActivity extends AppCompatActivity implements AddTermDialog.OnT
                 mTerms.remove(index);
                 notifyItemRemoved(index);
             }
+        }
+
+        public int getPosition1() {
+            return position1;
         }
 
         public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{

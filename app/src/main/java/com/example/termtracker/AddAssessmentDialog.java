@@ -25,6 +25,7 @@ public class AddAssessmentDialog extends AppCompatDialogFragment {
         void onAssessmentEntered(Assessment assessment);
     }
 
+    @SuppressLint("CutPasteId")
     @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

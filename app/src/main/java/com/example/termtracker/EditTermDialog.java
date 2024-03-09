@@ -34,6 +34,7 @@ public class EditTermDialog extends AppCompatDialogFragment {
     private OnTermEdited listener;
 
 
+    @SuppressLint("CutPasteId")
     @NotNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

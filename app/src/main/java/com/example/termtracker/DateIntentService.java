@@ -15,7 +15,6 @@ public class DateIntentService extends  IntentService{
     // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
     public static final String DATE = "com.example.termtracker.DATE";
     private final String CHANNEL_ID_DATE = "channel_date";
-    private final int NOTIFICATION_ID = 0;
 
 
     public DateIntentService() {
@@ -64,6 +63,7 @@ public class DateIntentService extends  IntentService{
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
+        int NOTIFICATION_ID = 0;
         notificationManager.notify(NOTIFICATION_ID, notification);
     }
 
